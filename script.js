@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const grid = document.querySelector(".grid");
     const resultDisplay = document.querySelector("#result");
+    const gif = document.querySelector("#gif");
     let cardsChosen = [];
     let cardsChosenId = [];
     let cardsWon = [];
@@ -98,6 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
         resultDisplay.textContent = cardsWon.length;
         if (cardsWon.length === cardArray.length/2) {
             resultDisplay.textContent = "Congrats! You found all of them!";
+            const congrats = document.createElement("img");
+            congrats.setAttribute("src", "images/thumbs.gif");
+            gif.appendChild(congrats); 
+            
         }
     }
 

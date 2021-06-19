@@ -9,6 +9,11 @@ h1 {
     font-size: 75px;
 }
 
+#gif {
+    margin: auto;
+    text-align: center;
+}
+
 #center {
     margin: auto;
 }
@@ -20,6 +25,7 @@ h1 {
     width: 400px;
     margin: auto;
     border: 2px solid rgb(4, 25, 63);
+    
 }
 
 .grid:hover {
